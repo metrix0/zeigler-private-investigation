@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="text-brand relative font-brand">
+
+<section class="relative h-screen flex flex-col">
+
+  <div class="absolute inset-0 z-[-1]">
+    <div class="hidden absolute inset-0 bg-cover bg-left md:bg-center"
+         style="background-image: url('public/img/placeholder-background.png');">
+    </div>
+
+    <video autoplay loop muted playsinline class="w-full h-full object-cover object-left md:object-center">
+      <source src="public/img/zeiglerbg2.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="md:hidden w-full flex justify-between items-center mt-5 px-4 relative">
+    <img src="public/img/Logo_.png" alt="Zeigler Logo" class="h-10 ml-5 ">
+
+    <button id="menuButton" class="p-2 focus:outline-none text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div id="mobileMenu" class="fixed inset-0 bg-black/40 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 z-50">
+
+      <button id="closeMenu" class="absolute top-5 right-5 text-white text-3xl z-50 -rotate-45 duration-300">
+        <i class="fa-solid fa-xmark" ></i>
+      </button>
+
+      <div id="menuPanel" class="bg-text w-3/4 max-w-sm h-full p-6 transform -translate-x-full transition-transform duration-300 ease-out shadow-xl relative">
+        <ul class="mt-10 flex flex-col text-left text-lg font-light space-y-2">
+          <li><a href="#" class="block py-3 px-2 hover:bg-gray-100 rounded active:text-gray-400 duration-300">HOME</a></li>
+          <li><a href="#" class="block py-3 px-2 hover:bg-gray-100 rounded active:text-gray-400 duration-300">SERVICES</a></li>
+          <li><a href="#" class="block py-3 px-2 hover:bg-gray-100 rounded active:text-gray-400 duration-300">LAW FIRMS</a></li>
+          <li><a href="#" class="block py-3 px-2 hover:bg-gray-100 rounded active:text-gray-400 duration-300">CREDENTIALS</a></li>
+          <li><a href="#" class="block py-3 px-2 hover:bg-gray-100 rounded active:text-gray-400 duration-300">REQUEST A CONSULTATION</a></li>
+          <li><a href="#" class="block py-3 px-2 hover:bg-gray-100 rounded active:text-gray-400 duration-300">
+            <i class="fa-solid fa-circle-user mr-2 text-xl"></i> CLIENT LOGIN
+          </a></li>
+        </ul>
+      </div>
+    </div>  </div>
+  <div class="hidden md:block w-[95%] ml-[2.5%] mt-2 2xl:mt-4 ">
+    <div class="mx-auto w-full px-6 mt-6 2xl:mt-8 ">
+      <div class="flex items-center w-full">
+        <div>
+        <img src="public/img/logo_.png" alt="Zeigler Logo" class="h-13 2xl:h-18">
+        </div>
+        <div class="flex-1"></div>
+
+        <div class="flex items-center space-x-6" >
+          <nav class="relative rounded-sm px-17 py-5 2xl:px-22 2xl:py-7 flex items-center border border-gray-300 shadow-sm">
+            <div class="absolute inset-0 bg-black/20 backdrop-blur-md rounded-sm mix-blend-multiply pointer-events-none isolation isolate"></div>
+            <div class="relative hidden md:flex space-x-8 2xl:space-x-12 text-white text-sm font-thin 2xl:text-[1.375rem]">
+              <a href="#" class="hover:text-light transition-colors duration-200">HOME</a>
+              <a href="#" class="hover:text-light transition-colors duration-200">SERVICES</a>
+              <a href="#" class="hover:text-light transition-colors duration-200">LAW FIRMS</a>
+              <a href="#" class="hover:text-light transition-colors duration-200">CREDENTIALS</a>
+              <a href="#" class="hover:text-light transition-colors duration-200">REQUEST CONSULTATION</a>
+            </div>
+          </nav>
+
+          </nav>
+
+          <div class="flex items-center space-x-2 2xl:space-x-4 2xl:ml-2 text-white hover:text-light transition-colors duration-300 cursor-pointer">
+            <i class="fa-solid fa-circle-user text-xl 2xl:text-3xl"></i>
+            <span class="hidden sm:inline text-sm font-light 2xl:text-xl">CLIENT LOGIN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-1 flex items-center px-6 md:px-16 text-center md:text-left">
+    <div class="max-w-2xl -mt-[8%] md:mt-[8%] ml-[2%] 2xl:max-w-4xl">
+      <h1 class="text-5xl md:text-6xl font-bold font-title mb-4 2xl:text-[5rem]">
+        Strategic Intelligence<br class="hidden md:block"> for Law Firms
+      </h1>
+      <p class="text-2lg md:text-xl mb-8 mt-10 font-light 2xl:text-3xl 2xl:leading-snug 2xl:mt-17">
+        Licensed private investigators delivering verifiable,<br class="hidden md:block"> court-ready intelligence — discreetly.
+      </p>
+      <button class="bg-text text-brand px-8 py-3 2xl:mt-5 rounded-sm cursor-pointer hover:bg-dark transition hoverButtonSpecialAnimation active:bg-darker duration-300 2xl:text-2xl 2xl:py-5 2xl:px-10">
+        PRIVATE CONSULTATION
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="section2" class="relative bg-brand text-text py-24 overflow-hidden 2xl:h-screen 2xl:flex">
+  <div class="2xl:scale-120 max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <div class="flex flex-col space-y-8 items-center md:items-start md:text-left text-center md:ml-25 2xl:ml-10">
+      <div>
+        <p class="text-lg text-text mt-7 2xl:text-xl">
+          FLORIDA & INDIANA
+        </p>
+        <h1 class="text-4xl md:text-5xlmb-4 mt-2 2xl:text-[2.625rem]">
+          <b>$3.2 Million</b> Estimated Client Savings.
+        </h1>
+        <p class="text-lg text-text mt-7 2xl:mt-10 2xl:text-xl">
+          For nearly 20 years, Zeigler & Associates has provided expert investigative services to Law Firms.
+        </p>
+      </div>
+
+      <div class="flex md:space-x-4 mt-4 w-80">
+        <img src="public/img/Badge_2.png" alt="Sample 1" class="w-1/3">
+        <img src="public/img/Badge_1.png" alt="Sample 2" class="w-1/3">
+        <img src="public/img/Badge_3.png" alt="Sample 3" class="w-1/3">
+      </div>
+
+      <button class="bg-text text-brand px-8 py-3 mt-5 rounded-sm cursor-pointer hover:bg-dark transition hoverButtonSpecialAnimation active:bg-darker duration-300 w-fit 2xl:text-xl 2xl:py-4 2xl:mt-10">
+        PRIVATE CONSULTATION
+      </button>
+    </div>
+
+    <div class="2xl:scale-120 relative h-[600px] flex justify-center items-center overflow-visible">
+      <img id="hiddenImage"
+           src="public/img/Logo_2.png"
+           alt="Hidden Image"
+           class="z-6 absolute object-cover w-60 blur-sm transition-opacity" />
+      <img id="hiddenImage2"
+           src="public/img/Logo_2.png"
+           alt="Hidden Image"
+           class="absolute z-11 object-cover w-60 opacity-0 transition-opacity" />
+      <div id="glassTop" class="absolute z-9 top-0 ml-10 w-[45%] h-[50%] bg-black/16 border-1 border-gray-200 backdrop-blur-md rounded-sm shadow-lg"></div>
+      <div id="glassRight" class="absolute z-10 -right-5 w-[80%] h-[35%] bg-black/16 border-1 border-gray-200 backdrop-blur-md rounded-sm shadow-lg"></div>
+      <div id="glassBottom" class=" z-8 absolute -bottom-30 w-[60%] mr-30 h-[80%] bg-black/16 border-1 border-gray-200 backdrop-blur-md rounded-sm shadow-lg"></div>
+      <div id="squares" class="z-0 hidden md:flex relative w-170 h-110 items-center justify-center">
+        <div class="absolute border-1 border-gray-200 w-full h-full square rounded-xl"></div>
+        <div style="animation-delay: 0.1s" class="absolute border-1 border-gray-200 w-5/6 h-5/6 square rounded-xl"></div>
+        <div style="animation-delay: 0.2s" class="absolute border-1 border-gray-200 w-2/3 h-2/3 square rounded-xl"></div>
+        <div style="animation-delay: 0.3s" class="absolute border-1 border-gray-200 w-1/2 h-1/2 square rounded-xl"></div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+<script type="module" src="src/main.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+</html>
